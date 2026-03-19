@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nathan Overbey</title>
+    <meta name="description" content="Real estate insights and market updates from Nathan Overbey in Mount Pleasant, SC.">
+    <meta name="author" content="Nathan Overbey">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="../index.html" class="nav-brand">Nathan Overbey <span>|</span> The Cassina Group</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="header-inner">
+            <div class="page-label">Local Insights</div>
+            <h1 class="page-title">Real Estate <em>Blog</em></h1>
+            <p class="page-subtitle">Neighborhood guides, market updates, and buying tips from an agent who lives and works in Mount Pleasant.</p>
+        </div>
+    </div>
+
+    <section class="blog-section">
+        <div class="blog-grid" id="blog-posts">
+            <!-- Blog posts will be added here -->
+            <div style="text-align:center;color:var(--color-warm-gray);padding:4rem 0;">
+                <p style="font-family:var(--font-display);font-size:1.4rem;color:var(--color-driftwood);margin-bottom:0.5rem;">Coming Soon</p>
+                <p>Check back for real estate insights and market updates.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-brand">Nathan Overbey | The Cassina Group</div>
+        <p>
+            Mount Pleasant, SC · 8439113930<br>
+            Equal Housing Opportunity
+        </p>
+        <p style="margin-top:4px;font-style:italic;font-size:0.8rem;">Content on this site is created with AI assistance and reviewed by Nathan Overbey.</p>
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../blog/index.html">Blog</a>
+            <a href="../contact.html">Contact</a>
+            <a href="https://withnotable.ai">Powered by withNotable</a>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll-triggered fade-in
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+        // Nav scroll state
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Hamburger menu
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-open');
+                navToggle.classList.toggle('active');
+            });
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('mobile-open');
+                    navToggle.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
