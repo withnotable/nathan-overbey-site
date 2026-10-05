@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Nathan Overbey</title>
+    <meta name="description" content="Market insights and neighborhood guides from Nathan Overbey.">
+    <meta property="og:title" content="Blog | Nathan Overbey">
+    <meta property="og:description" content="Market insights and neighborhood guides from Nathan Overbey.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="../" class="nav-brand">Nathan Overbey <span>·</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about">About</a></li>
+                <li><a href="../#neighborhoods">Neighborhoods</a></li>
+                <li><a href="../blog">Blog</a></li>
+                
+                <li><a href="../contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="meta-line"><span class="blog-card-category">Insights</span></div>
+            <h1>Market Insights</h1>
+        </div>
+    </div>
+    <section>
+        <div class="section-inner">
+            <div class="blog-grid" id="blog-posts">
+                <p class="blog-empty">New articles coming soon.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-brand">Nathan Overbey · Overbey Real Estate Group</div>
+        <p>Equal Housing Opportunity</p>
+        <p class="footer-disclaimer">Content on this site is created with AI assistance and reviewed by Nathan Overbey.</p>
+        <div class="footer-links">
+            <a href="../">Home</a>
+            <a href="../about">About</a>
+            <a href="../blog">Blog</a>
+            <a href="../contact">Contact</a>
+            <a href="https://withnotable.ai" target="_blank" rel="noopener noreferrer">Powered by withNotable</a>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => { navLinks.classList.toggle('mobile-open'); navToggle.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>

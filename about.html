@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Nathan Overbey | Overbey Real Estate Group</title>
+    <meta name="description" content="Old Village real estate specialist Nathan Overbey. 15 years expertise in Mount Pleasant, Sullivans Island, Isle of Palms. Spanish-fluent. Top Producer.">
+    <meta property="og:title" content="About Nathan Overbey | Overbey Real Estate Group">
+    <meta property="og:description" content="Old Village real estate specialist Nathan Overbey. 15 years expertise in Mount Pleasant, Sullivans Island, Isle of Palms. Spanish-fluent. Top Producer.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "RealEstateAgent", "name": "Nathan Overbey", "jobTitle": "Real Estate Agent & Old Village Specialist", "telephone": "8439063930", "email": "nathan@nathanoverbeyrealestate.com", "url": "https://www.nathanoverbeyrealestate.com", "areaServed": [{"@type": "City", "name": "Mount Pleasant", "State": "South Carolina"}, {"@type": "City", "name": "Sullivans Island", "State": "South Carolina"}, {"@type": "City", "name": "Isle of Palms", "State": "South Carolina"}], "knowsAbout": ["Old Village Homes", "Old Mount Pleasant Real Estate", "Waterfront Properties", "Island Living", "First-Time Homebuyers"], "workLocation": [{"@type": "Place", "address": {"@type": "PostalAddress", "addressLocality": "Mount Pleasant", "addressRegion": "South Carolina", "postalCode": "29464", "addressCountry": "US"}}], "sameAs": "https://www.linkedin.com/in/nathanoverbey", "agentInteractionStatistic": [{"@type": "InteractionCounter", "interactionType": "https://schema.org/BuyAction", "userInteractionCount": "100+"}, {"@type": "InteractionCounter", "interactionType": "https://schema.org/SellAction", "userInteractionCount": "100+"}], "award": ["Top Producer", "Rookie of the Year", "Platinum Award", "Five Star Agent"], "yearsInBusiness": 15, "knowsLanguage": ["English", "Spanish"], "affiliation": {"@type": "Organization", "name": "Overbey Real Estate Group"}}
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="./" class="nav-brand">Nathan Overbey <span>·</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="./#neighborhoods">Neighborhoods</a></li>
+                <li><a href="blog">Blog</a></li>
+                
+                <li><a href="contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="meta-line"><span class="blog-card-category">About</span></div>
+            <h1>About Nathan Overbey</h1>
+            <p class="article-lede">15 Years as an Old Village Specialist</p>
+        </div>
+    </div>
+    <div class="article-body"><p>Nathan Overbey is a Mount Pleasant, SC real estate agent and the founder of Overbey Real Estate Group. Having lived in the Old Village neighborhood of Mount Pleasant for more than 13 years, Nathan brings a depth of local knowledge that goes well beyond what any market report can offer — from the quiet streets that feel just right to the small pockets that make this community so distinctive.</p><p>For Nathan, real estate is personal. As a family man himself, he understands what it truly means to find a home where life gets lived — where kids grow up, memories are made, and roots go deep. That genuine connection to home and community is what drives his work every single day.</p><p>Whether you're buying your first home in Mount Pleasant or selling a property you've loved for years, Nathan's approach is rooted in honesty, care, and an insider's understanding of the area. He takes the time to really listen, matching clients not just with a house, but with the right fit for their lives.</p><p>If you're looking for a Mount Pleasant real estate agent who knows the Old Village and the surrounding Lowcountry communities the way a neighbor does, Nathan Overbey and the Overbey Real Estate Group are ready to help you find your way home.</p>
+                <div class="awards-block fade-in" aria-label="Credentials">
+                    <div class="awards-label">Credentials &amp; Designations</div>
+                    <ul class="awards-chips"><li class="award-chip">Top Producer</li><li class="award-chip">Rookie of the Year</li><li class="award-chip">Platinum Award</li><li class="award-chip">Five Star Agent</li></ul>
+                </div>
+    </div>
+
+    <footer>
+        <div class="footer-brand">Nathan Overbey · Overbey Real Estate Group</div>
+        <p>Equal Housing Opportunity</p>
+        <p class="footer-disclaimer">Content on this site is created with AI assistance and reviewed by Nathan Overbey.</p>
+        <div class="footer-links">
+            <a href="./">Home</a>
+            <a href="about">About</a>
+            <a href="blog">Blog</a>
+            <a href="contact">Contact</a>
+            <a href="https://withnotable.ai" target="_blank" rel="noopener noreferrer">Powered by withNotable</a>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => { navLinks.classList.toggle('mobile-open'); navToggle.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>

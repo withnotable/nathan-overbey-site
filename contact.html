@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Nathan Overbey</title>
+    <meta name="description" content="Get in touch with Nathan Overbey, your Mount Pleasant real estate expert.">
+    <meta property="og:title" content="Contact Nathan Overbey">
+    <meta property="og:description" content="Get in touch with Nathan Overbey, your Mount Pleasant real estate expert.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="./" class="nav-brand">Nathan Overbey <span>·</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="./">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="./#neighborhoods">Neighborhoods</a></li>
+                <li><a href="blog">Blog</a></li>
+                
+                <li><a href="contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <section class="contact" id="contact">
+        <div class="section-inner">
+            <div class="section-label">Get In Touch</div>
+            <h2 class="section-title">Let's Talk About <em>Your Next Move</em></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Nathan Overbey, Realtor</h3>
+                    <div class="contact-detail"><div class="detail-label">Phone</div><div class="detail-value"><a href="tel:8439063930">8439063930</a></div></div>
+                    <div class="contact-detail"><div class="detail-label">Email</div><div class="detail-value"><a href="mailto:nathan@nathanoverbeyrealestate.com">nathan@nathanoverbeyrealestate.com</a></div></div>
+                    <div class="contact-detail"><div class="detail-label">Brokerage</div><div class="detail-value">Overbey Real Estate Group<br>Mount Pleasant, SC</div></div>
+                    <div class="contact-profiles"><div class="detail-label">Find Nathan Overbey Online</div><div class="profile-links"><a href=" www.linkedin.com/in/nathanoverbey" target="_blank" rel="noopener noreferrer" class="profile-link">LinkedIn</a></div></div>
+                </div>
+                <div class="contact-cta">
+                    <h3>Ready to get started?</h3>
+                    <div class="cta-copy"><p>Whether you're exploring Old Village for the first time, considering a coastal island lifestyle, or ready to make your next move in Mount Pleasant and the Lowcountry, I'd welcome the opportunity to share my 13 years of neighborhood insight and 15 years of real estate expertise with you.</p><p>Let's find the home and the neighborhood where your family truly belongs.</p></div>
+                    <p class="contact-cta-primary"><a href="tel:8439063930" class="btn-primary">Call Nathan · 8439063930</a></p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-brand">Nathan Overbey · Overbey Real Estate Group</div>
+        <p>Equal Housing Opportunity</p>
+        <p class="footer-disclaimer">Content on this site is created with AI assistance and reviewed by Nathan Overbey.</p>
+        <div class="footer-links">
+            <a href="./">Home</a>
+            <a href="about">About</a>
+            <a href="blog">Blog</a>
+            <a href="contact">Contact</a>
+            <a href="https://withnotable.ai" target="_blank" rel="noopener noreferrer">Powered by withNotable</a>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => { navLinks.classList.toggle('mobile-open'); navToggle.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ion Neighborhood Guide | Nathan Overbey</title>
+    <meta name="description" content="iOn is a thoughtfully designed New Urbanist community in Mount Pleasant, SC, built around walkable streets, front porches, and a strong sense of place.">
+    <meta property="og:title" content="ion Neighborhood Guide | Nathan Overbey">
+    <meta property="og:description" content="iOn is a thoughtfully designed New Urbanist community in Mount Pleasant, SC, built around walkable streets, front porches, and a strong sense of place.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Place",
+  "name": "ion",
+  "url": "https://withnotable.github.io/nathan-overbey-site/neighborhoods/ion",
+  "description": "iOn is a thoughtfully designed New Urbanist community in Mount Pleasant, SC, built around walkable streets, front porches, and a strong sense of place.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "SC"
+  }
+}
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-inner">
+            <a href="../" class="nav-brand">Nathan Overbey <span>·</span> Realtor</a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about">About</a></li>
+                <li><a href="../#neighborhoods">Neighborhoods</a></li>
+                <li><a href="../blog">Blog</a></li>
+                
+                <li><a href="../contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="meta-line"><span class="blog-card-category">Neighborhood Guide</span><span>Mount Pleasant, SC</span></div>
+            <h1>ion</h1>
+            <p class="article-lede">iOn is a thoughtfully designed New Urbanist community in Mount Pleasant, SC, built around walkable streets, front porches, and a strong sense of place.</p>
+        </div>
+    </div>
+
+    <div class="article-body">
+        <h2>A Community Built on New Urbanist Principles</h2><p>iOn is a planned New Urbanist neighborhood located in Mount Pleasant, South Carolina, developed in the late 1990s and early 2000s. Its design philosophy draws from traditional Southern town planning — prioritizing walkability, human scale, and a sense of community over the car-centric layouts common in many modern subdivisions. The result is a neighborhood that feels rooted and intentional, with a character distinctly its own.</p><h2>Architecture and Street Life</h2><p>Homes in iOn reflect a range of traditional architectural styles, including Charleston Single, Lowcountry cottage, and Craftsman influences. Deep front porches, tabby accents, and carefully considered setbacks bring residents close to the sidewalk and to one another. Alleys run behind homes, tucking garages and utility infrastructure out of sight and keeping streetscapes pedestrian-friendly. The neighborhood's mixed-use zoning allows small-scale commercial and live-work spaces to coexist naturally alongside residential blocks.</p><h2>Waterfront Setting and Green Space</h2><p>iOn is positioned along Hobcaw Creek, giving portions of the neighborhood scenic tidal marsh views that are quintessentially Lowcountry. A network of parks, pocket greens, and a central lake — Hobcaw Lake — anchors the community's open space. Docks, kayak launches, and waterfront gathering spots make the connection to the water an everyday experience rather than an occasional one.</p><h2>Walkability and Local Culture</h2><p>The neighborhood's grid of streets and alleys is designed for walking and cycling. Residents frequently move through iOn on foot, gathering at the community dock, the small village center, or one of several green spaces that serve as informal meeting points. The overall pace is unhurried, shaped by the Lowcountry landscape and a built environment that encourages lingering on porches and stopping to talk with neighbors.</p><h2>Location and Surroundings</h2><p>Situated in Mount Pleasant, iOn enjoys easy access to the broader amenities of one of the Southeast's most vibrant coastal communities. Downtown Charleston is a short drive across the Arthur Ravenel Jr. Bridge, and the beaches of Sullivan's Island and Isle of Palms are close at hand. Within Mount Pleasant itself, shopping, dining, and the Shem Creek waterfront district are all readily accessible, making iOn a neighborhood that balances an intimate, walkable interior with strong regional connections.</p>
+        <div class="neighborhood-cta">
+            <h3>Considering ion?</h3>
+            <p>Nathan Overbey knows this area firsthand. Reach out for local guidance.</p>
+            <a href="../contact" class="btn-primary">Ask Nathan About ion</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-brand">Nathan Overbey · Overbey Real Estate Group</div>
+        <p>Equal Housing Opportunity</p>
+        <p class="footer-disclaimer">Content on this site is created with AI assistance and reviewed by Nathan Overbey.</p>
+        <div class="footer-links">
+            <a href="../">Home</a>
+            <a href="../about">About</a>
+            <a href="../blog">Blog</a>
+            <a href="../contact">Contact</a>
+            <a href="https://withnotable.ai" target="_blank" rel="noopener noreferrer">Powered by withNotable</a>
+        </div>
+    </footer>
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (nav) nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        if (navToggle && navLinks) {
+            navToggle.addEventListener('click', () => { navLinks.classList.toggle('mobile-open'); navToggle.classList.toggle('active'); });
+        }
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const item = q.parentElement;
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+                if (!wasOpen) item.classList.add('open');
+            });
+        });
+    </script>
+</body>
+</html>
